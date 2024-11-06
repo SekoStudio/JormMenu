@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+body {
+    background-color: #E0d8cd;
+    font-size: 1rem; /* Base font size */
+}
+
+.NavBar {
+    position: sticky;
+    top: 0;
+    background-color: #9e623f;
+}
+
+.NavBar .Image {
+    max-width: 20vh;
+    border-radius: 3vh;
+}
+
+.whole-container {
+    margin: auto;
+    height: 70vh;
+    max-width: 70%;
+    display: flex;
+    border-radius: 2vh;
+    margin-top: 5vh;
+    padding: 2%;
+    flex-direction: row;
+    align-items: center;
+    background-color: #FFFF;
+}
+
+.text-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-right: 2rem;
+    width: 60%;
+}
+
+.titles h1 {
+    font-size: 4rem;
+    margin: 0;
+    margin-left: 10%;
+}
+
+.titles h3 {
+    font-size: 1.5rem;
+    margin: 0;
+    margin-left: 3%;
+}
+
+.titles h2 {
+    font-size: 2.2rem;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    padding-left: 5%;
+}
+
+.buttons {
+    display: flex;
+    gap: 1rem;
+    padding-top: 3rem;
+}
+
+.buttons .ArabicLanguage,
+.buttons .EnglishLanguage {
+    padding: 1vh 2vh;
+    font-size: 1.2rem;
+    color: #FFFF;
+    background-color: #22324b;
+    border: .1rem solid #22324b;
+    border-radius: .2rem;
+}
+
+.buttons .ArabicLanguage:hover,
+.buttons .EnglishLanguage:hover {
+    background-color: #9e623f;
+    border-color: #9e623f;
+    color: #f0ebe4;
+}
+
+.imagecontainer {
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    margin-right: 2rem;
+}
+
+.imagecontainer img {
+    width: 80%;
+    max-width: 300px;
+    border-radius: 0.5rem;
+}
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+    .titles h1 {
+        font-size: 3rem;
+        margin-left: 5%;
+    }
+
+    .titles h3 {
+        font-size: 1.3rem;
+    }
+
+    .titles h2 {
+        font-size: 1.8rem;
+    }
+
+    .buttons .ArabicLanguage,
+    .buttons .EnglishLanguage {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .whole-container {
+        flex-direction: column;
+        max-width: 90%;
+        height: auto;
+    }
+
+    .text-container, .imagecontainer {
+        width: 100%;
+        margin: 1rem 0;
+    }
+
+    .titles h1 {
+        font-size: 2.5rem;
+    }
+
+    .titles h3 {
+        font-size: 1.2rem;
+    }
+
+    .titles h2 {
+        font-size: 1.5rem;
+    }
+
+    .buttons .ArabicLanguage,
+    .buttons .EnglishLanguage {
+        font-size: 0.9rem;
+    }
+}
