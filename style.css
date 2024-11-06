@@ -28,10 +28,10 @@ body {
     max-width: 70%;
     display: flex;
     border-radius: 2vh;
-    margin-top: 5vh;
+    margin-top: 7vh;
     padding: 1%;
-    flex-direction: row;
     align-items: center;
+    flex-direction: row;
     background-color: #FFFF;
     box-shadow: .2em .2em .5em .4em #afaba5;
 }
@@ -44,31 +44,35 @@ body {
 }
 
 .titles h1 {
-    font-size: 4rem;
+    font-size: 5rem;
     margin: 0;
-    margin-left: 60%;
+    margin-left: 55%;
+    margin-top: 4%;
 }
 
 .titles h3 {
     font-size: 1.5rem;
-    margin-left: 55%;
+    margin-left: 58%;
+    margin-top: 5%;
+
 }
 
 .titles h2 {
     font-size: 2.2rem;
-    margin-bottom: 1rem;
+    margin-top: 13rem;
     padding-left: 46%;
 }
 
 .buttons {
     display: flex;
     gap: 1.4rem;
-    padding-top: 3rem;
-    margin-left: 21rem;
+    padding-bottom: 20%;
+    margin-left: 22rem;
 }
 
 .buttons .ArabicLanguage,
 .buttons .EnglishLanguage {
+    font-family: "Rubik", serif;
     padding: 1vh 2vh;
     font-size: 1.2rem;
     color: #FFFF;
@@ -76,6 +80,7 @@ body {
     border: .1rem solid #22324b;
     border-radius: .2rem;
     transition: .6s;
+    animation: MyAnimation 5s infinite;
 }
 
 .buttons .ArabicLanguage:hover,
@@ -97,55 +102,4 @@ body {
     width: 80%;
     max-width: 500px;
     border-radius: 0.9rem;
-}
-
-
-@media (max-width: 1200px) {
-    .titles h1 {
-        font-size: 3rem;
-        margin-left: 5%;
-    }
-
-    .titles h3 {
-        font-size: 1.3rem;
-    }
-
-    .titles h2 {
-        font-size: 1.8rem;
-    }
-
-    .buttons .ArabicLanguage,
-    .buttons .EnglishLanguage {
-        font-size: 1rem;
-    }
-}
-
-@media (max-width: 799px) {
-    .whole-container {
-        flex-direction: column;
-        max-width: 90%;
-        height: auto;
-    }
-
-    .text-container, .imagecontainer {
-        width: 100%;
-        margin: 1rem 0;
-    }
-
-    .titles h1 {
-        font-size: 2.5rem;
-    }
-
-    .titles h3 {
-        font-size: 1.2rem;
-    }
-
-    .titles h2 {
-        font-size: 1.5rem;
-    }
-
-    .buttons .ArabicLanguage,
-    .buttons .EnglishLanguage {
-        font-size: 0.9rem;
-    }
 }
