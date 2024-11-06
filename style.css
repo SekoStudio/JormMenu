@@ -2,10 +2,16 @@
 
 body {
     background-color: #E0d8cd;
-    font-size: 1rem; /* Base font size */
+    margin: 0;
+    padding: 0;
+}
+
+.loadingscreen {
+    background-color: #9e623f;
 }
 
 .NavBar {
+    width: 100%;
     position: sticky;
     top: 0;
     background-color: #9e623f;
@@ -23,43 +29,42 @@ body {
     display: flex;
     border-radius: 2vh;
     margin-top: 5vh;
-    padding: 2%;
+    padding: 1%;
     flex-direction: row;
     align-items: center;
     background-color: #FFFF;
+    box-shadow: .2em .2em .5em .4em #afaba5;
 }
 
 .text-container {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    margin-right: 2rem;
-    width: 60%;
+    width: 69%;
 }
 
 .titles h1 {
     font-size: 4rem;
     margin: 0;
-    margin-left: 10%;
+    margin-left: 60%;
 }
 
 .titles h3 {
     font-size: 1.5rem;
-    margin: 0;
-    margin-left: 3%;
+    margin-left: 55%;
 }
 
 .titles h2 {
     font-size: 2.2rem;
-    margin-top: 2rem;
     margin-bottom: 1rem;
-    padding-left: 5%;
+    padding-left: 46%;
 }
 
 .buttons {
     display: flex;
-    gap: 1rem;
+    gap: 1.4rem;
     padding-top: 3rem;
+    margin-left: 21rem;
 }
 
 .buttons .ArabicLanguage,
@@ -70,6 +75,7 @@ body {
     background-color: #22324b;
     border: .1rem solid #22324b;
     border-radius: .2rem;
+    transition: .6s;
 }
 
 .buttons .ArabicLanguage:hover,
@@ -77,22 +83,23 @@ body {
     background-color: #9e623f;
     border-color: #9e623f;
     color: #f0ebe4;
+    box-shadow: .5em .5em #be8766;
 }
 
 .imagecontainer {
-    width: 30%;
+    width: 40%;
     display: flex;
     justify-content: center;
-    margin-right: 2rem;
+    margin-right: 1rem;
 }
 
 .imagecontainer img {
     width: 80%;
-    max-width: 300px;
-    border-radius: 0.5rem;
+    max-width: 500px;
+    border-radius: 0.9rem;
 }
 
-/* Responsive Design */
+
 @media (max-width: 1200px) {
     .titles h1 {
         font-size: 3rem;
@@ -113,7 +120,7 @@ body {
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 799px) {
     .whole-container {
         flex-direction: column;
         max-width: 90%;
