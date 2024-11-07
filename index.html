@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Menu Cofe Jorm</title>
+    <link rel="icon" type="image/x-icon" href="ca5e4a31-c03d-4f9d-8c21-d98945ec02e5.jpg">
     <link rel="stylesheet" href="style.css">
     <script  src="script.js"></script>
 </head>
@@ -22,12 +23,20 @@
             <h2 class="Choose language">: أختر اللغة </h2>
         </div>
         <div class="buttons">
-            <button class="ArabicLanguage" onclick="ArabicShowlanguage()"><span>العربية</span></button>
-            <button class="EnglishLanguage" onclick="EnglishLanguageShow()"><span>English</span></button>
+            <button class="ArabicLanguage" onclick="SelectLang('ar')"><span>العربية</span></button>
+            <button class="EnglishLanguage"onclick="SelectLang('en')"><span>English</span></button>
         </div>
     </div>
     <div class="imagecontainer">
         <img src="Flag-Saudi-Arabia.webp" height="650" alt="CofeImage">
+    </div>
+
+
+    <div class="food-menu hidden">
+        <h1 data-ar=":أختر الصنف المطلوب" data-en="Choose the category:"> لا شيء</h1>
+        <a href="#"><span data-ar="المشروبات الساخنة" data-en="Hot Drinks">لا شيء</span></a>
+        <a href="#"><span data-ar="المشروبات الباردة" data-en="Cold Drinks">لا شيء</span> </a>
+        <a href="#"><span data-ar="الحلويات" data-en="Sweets"></span></a>
     </div>
 </div>
 
