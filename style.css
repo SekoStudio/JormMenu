@@ -20,38 +20,37 @@ body {
 
 .whole-container {
     margin: auto;
-    height: 70%;
-    max-width: 70%;
+    height: 90%;
+    max-width: 95%;
     display: flex;
-    border-radius: 2vh;
-    margin-top: 7vh;
-    padding: 1%;
+    border-radius: 2vw;
+    margin-top: 2%;
+    padding: 2%;
     align-items: center;
-    flex-direction: row;
+    flex-direction: row-reverse;
     background-color: #FFFF;
     box-shadow: .2em .2em .5em .4em #afaba5;
-    min-width: 1390;
 }
 
 .text-container {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    width: 69%;
+    width: 65%;
 }
 
 .titles h1 {
     font-size: 5rem;
     margin: 0;
-    margin-left: 55%;
-    margin-top: 1%;
+    margin-left: 60%;
+    margin-top: 3%;
     font-family: "Rubik" serif;
 }
 
 .titles h3 {
     font-size: 1.5rem;
-    margin-left: 58%;
-    margin-top: 2%;
+    margin-left: 60%;
+    margin-top: 3%;
     font-family: "Rubik" serif;
 }
 
@@ -64,15 +63,15 @@ body {
 
 .buttons {
     display: flex;
-    gap: 1.4rem;
-    padding-bottom: 20%;
+    gap: 1.2vw;
+    padding-bottom: 10%;
     margin-left: 43%;
 }
 
 .buttons .ArabicLanguage,
 .buttons .EnglishLanguage {
     font-family: "Rubik", serif;
-    padding: 1vh 2vh;
+    padding: 1% 2%;
     font-size: 1.2rem;
     color: #FFFF;
     background-color: #22324b;
@@ -126,21 +125,45 @@ body {
 @media (max-width: 1075px) {
     .imagecontainer {
         opacity: 0;
+        position: absolute;
+    }
+    .titles h1 {
+        font-size: 3rem;
+    }
+    .titles h2 {
+        font-size: 2rem;
+    }
+    .titles h3 {
+        font-size: 1.2rem;
     }
 }
 
 @media (max-width: 768px) {
-    .imagecontainer {
-        z-index: initial;
-        opacity: 0;
+    .titles h1 {
+        font-size: 2rem;
+        margin-top: 10%;
+    }
+    .titles h2 {
+        font-size: 1.5rem;
+        margin-top: 30%;
+        margin-left: 20%;
+        padding: 0;
+    }
+    .titles h3 {
+        font-size: 1rem;
+        margin-left: 43%;
+        margin-top: 5%;
+    }
+
+    .buttons {
+        margin-left: 16%;
+    }
+    .buttons .ArabicLanguage,
+.buttons .EnglishLanguage {
+        font-size: 1rem;
+        padding: 1% 1%;
     }
 }
 
 @media (max-width: 480) {
-.imagecontainer {
-        opacity: 0;
-    }
-.titles h1 {
-        font-size: 2vh;
-    }
 }
